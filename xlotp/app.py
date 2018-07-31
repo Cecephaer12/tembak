@@ -1,3 +1,7 @@
+ kumpul4semut / semut
+Code  Issues 0  Pull requests 0  Projects 0  Pulse
+xlotp/app.py
+
 # -*- coding: utf-8 -*-
 import os
 import sys
@@ -10,7 +14,7 @@ g = "\033[32;1m"
 gt = "\033[0;32m"
 bt = "\033[34;1m"
 b = "\033[36;1m"
-m = "\033[29;1m"
+m = "\033[31;1m"
 c = "\033[0m"
 p = "\033[37;1m"
 u = "\033[35;1m"
@@ -41,7 +45,7 @@ def lodprint(s):
         sys.stdout.flush()
         time.sleep(7.0/90)
 
-CH=(gt+"""
+semut=(gt+"""
  #####  ####### #     # #     # ####### 
 #     # #       ##   ## #     #    #    
 #       #       # # # # #     #    #    
@@ -61,8 +65,7 @@ def main_menu():
         "\nPilih Salah Satu:"
         "\n  [1] Menu Beli Paket" + 
         "\n  [2] Minta Otp Code" +
-        "\n  [3] Menu utama"+
-        
+        "\n  [3] Menu utama"
     )
     choice = str(input(" ex:1👉 "))
     exec_menu(choice)
@@ -98,7 +101,7 @@ def menu_1():
     pkt = str(input("Pilih Sesuai Keinginan >> "))
     
     if pkt == '1':
-        i = '8110529'
+        i = '8110577'
     elif pkt == '2':
         i = '8211010'
     elif pkt == '3':
@@ -160,3 +163,4 @@ menu_actions = {
 
 if __name__ == "__main__":
     main_menu()
+ Desktop version Sign out
