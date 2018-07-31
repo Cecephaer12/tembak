@@ -1,1 +1,0 @@
-# tembak paket XL
