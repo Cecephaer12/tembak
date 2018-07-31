@@ -41,7 +41,7 @@ def lodprint(s):
         sys.stdout.flush()
         time.sleep(7.0/90)
 
-semut=(gt+"""
+CH=(gt+"""
  #####  ####### #     # #     # ####### 
 #     # #       ##   ## #     #    #    
 #       #       # # # # #     #    #    
@@ -61,7 +61,8 @@ def main_menu():
         "\nPilih Salah Satu:"
         "\n  [1] Menu Beli Paket" + 
         "\n  [2] Minta Otp Code" +
-        "\n  [3] Menu utama"
+        "\n  [3] Menu utama"+
+        "\n [4] Keluar
     )
     choice = str(input(" ex:1👉 "))
     exec_menu(choice)
@@ -153,6 +154,7 @@ menu_actions = {
     "1" : menu_1,
     "2" : menu_2,
     "3" : menu_3,
+    "4": menu_4,
     "0" : exit
 }
 
