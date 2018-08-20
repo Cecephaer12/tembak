@@ -1,3 +1,4 @@
+
 import os, sys, time, subprocess, socket, select, threading
 from platform import python_version
 pv = python_version()
@@ -67,6 +68,7 @@ def main_menu():
        slowprint (gt+"Menu Pilihan:")
        print (gt+"  ["+p+"1"+gt+"] "+p+"Tembak Paket")
        print (gt+"  ["+p+"2"+gt+"] "+p+"Credit")
+       print (gt+"  ["+p+"3"+gt+"] "+p+"Telkomsel")
        print (gt+"  ["+p+"0"+gt+"] "+p+"Keluar")
       
     
@@ -99,6 +101,10 @@ def menu_2():
     slowaprint("[4]https://github.com/kumpul4semut")
     slowaprint("[4]https://github.com/Cecephaer12/tembak")
     return os.system('python chr.py')
+    
+    def menu_3():
+    slowaprint("loading")
+    os.system('cd tsel;python app.py')
 
 def exit():
     sys.exit()
@@ -110,6 +116,7 @@ menu_actions = {
     "main" : main_menu,
     "1" : menu_1,
     "2" : menu_2,
+    "3" : menu_3,
     "0" : exit
 }
 
