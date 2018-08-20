@@ -14,13 +14,13 @@ function reqotp($no){
         $x++;
         flush();
     }
-print "\033[0;32m #######  #     #  # ##### 
-#  C      # H   #  # U   #     
-#   E     #   A #  #   D #   
-#  C      #######  # I N # 
-#   E     #  E  #  #  #
-#  P      # R   #  #   #
- ######## #     #  #     #  \n Minta password tsel \n " ;
+print "\033[0;32m #####  ####### #     # #     # ####### 
+#     # #       ##   ## #     #    #    
+#       #       # # # # #     #    #    
+ #####  #####   #  #  # #     #    #    
+      # #       #     # #     #    #    
+#     # #       #     # #     #    #    
+ #####  ####### #     #  #####     #  \n Minta password tsel \n " ;
 echo " \033[36;1m Nomor 62xx: ";
 $nomor = trim(fgets(STDIN));
 $execute = reqotp($nomor);
