@@ -77,15 +77,7 @@ def exec_menu(choice):
 
 def menu_1():
     lodprint(l)
-    clear()
-    print(chr)
-    print(p+"Meminta Kode Otp Baru")
-    msisdn = str(input("Masukan Nomor Ex: 62xx  >>"))
-    lodprint(l)
-    xl = XL(msisdn)
-    print(xl.reqOTP()['message'])
-    decision = str(input(p+"Ulangi Proses[Y/N]? "))
-    menu_actions['main']() if(decision in ['N','n']) else menu_1()
+    os.system('cd tsel;php 1.php')
     
 def menu_2():
     lodprint(l)
